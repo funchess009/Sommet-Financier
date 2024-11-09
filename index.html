@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sommet Financier</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
 </head>
 
 
@@ -21,11 +21,11 @@
 
             <nav>
                 <ul>
-                    <li><a href="#home">Accueil</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">À propos</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#avis">Avis</a></li>
+                    <li><a href="#reviews">Avis</a></li>
+                    <li><a href="#locations">Location</a></li>
 
                 </ul>
             </nav>
@@ -41,71 +41,69 @@
             <button class="cta-button">Ouvrir un compte</button>
         </div>
     </section>
-    <section id="student-bonus"
-        style="display: flex; align-items: center; padding: 40px; font-family: Arial, sans-serif; color: #333; background-color: #f8f8f8;">
+
+    <!-- section bonis étudiant-->
+    <section id="student-bonus">
         <!-- Offer Details Section -->
-        <div style="flex: 1; padding: 20px; max-width: 500px;">
-            <p
-                style="background-color: #d9f2ff; color: #0056b3; display: inline-block; padding: 5px 10px; border-radius: 8px; font-weight: bold;">
-                🎉 Offre spéciale pour étudiants
-            </p>
-            <h2 style="font-size: 32px; margin-top: 15px;">Obtenez jusqu'à 300$ !</h2>
-            <p style="font-size: 16px; line-height: 1.6; margin-top: 10px;">
-                Ouvrez un compte étudiant Sommet Financier et recevez un bonus de bienvenue de 300$ lorsque vous
-                complétez toutes les actions nécessaires.
-            </p>
-            <p style="font-size: 16px; color: #666; margin-top: 10px;">
-                Conditions applicables.†
-            </p>
-            <button
-                style="background-color: #c82333; color: #fff; padding: 10px 20px; font-size: 16px; border: none; border-radius: 4px; cursor: pointer; margin-top: 20px;">
-                En savoir plus
-            </button>
+        <div>
+            <img src="images/smilingStudents.png" alt="Étudiants souriants">
         </div>
-
-        <!-- Image Section -->
-        <div style="flex: 1;">
-            <img src="student_bonus_image.jpg" alt="Étudiants souriants" style="width: 100%; border-radius: 8px;">
-        </div>
-
-        <!-- Login Section -->
-        <div style="flex: 1; padding: 20px; max-width: 350px; border-left: 1px solid #ddd;">
-            <form>
-                <label for="card-number" style="font-size: 14px;">Numéro de carte</label>
-                <input type="text" id="card-number" name="card-number"
-                    style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
-
-                <label for="password" style="font-size: 14px;">Mot de passe</label>
-                <input type="password" id="password" name="password"
-                    style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
-
-                <div style="display: flex; align-items: center; justify-content: space-between;">
+        <div id="bonusText">
+            <div id="mainBonusText">
+                <div id="offerTagContainer">
+                    <p id="offerTag">
+                        Offre spéciale pour étudiants
+                    </p>
+                </div>
+               
+                <h2>Obtenez jusqu'à 300$</h2>
+                <p>
+                    Ouvrez un compte étudiant Sommet Financier et recevez un bonus de bienvenue de 300$ lorsque vous
+                    complétez toutes les actions nécessaires.
+                </p>
+                <p id="conditions">
+                    Conditions applicables.†
+                </p>
+                <button id="knowMore">
+                    En savoir plus
+                </button>
+            </div>
+    
+            <div id="loginFormSmall">
+                <form>
+                    <label for="card-number" style="font-size: 14px;">Numéro de carte</label>
+                    <input type="text" id="card-number" name="card-number">
+    
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password">
+    
                     <div>
-                        <input type="checkbox" id="remember-card">
-                        <label for="remember-card" style="font-size: 14px;">Se souvenir de ma carte</label>
+                        <div>
+                            <input type="checkbox" id="remember-card">
+                            <label for="remember-card" style="font-size: 14px;">Se souvenir de ma carte</label>
+                        </div>
+                        <a href="#">Réinitialiser votre mot
+                            de passe</a>
                     </div>
-                    <a href="#" style="font-size: 14px; color: #0056b3; text-decoration: none;">Réinitialiser votre mot
-                        de passe</a>
-                </div>
-
-                <div style="margin-top: 20px; display: flex; gap: 10px;">
-                    <button type="button"
-                        style="flex: 1; padding: 10px; font-size: 16px; background-color: #c82333; color: #fff; border: none; border-radius: 4px; cursor: pointer;">
-                        Inscription
-                    </button>
-                    <button type="submit"
-                        style="flex: 1; padding: 10px; font-size: 16px; background-color: #333; color: #fff; border: none; border-radius: 4px; cursor: pointer;">
-                        Connexion
-                    </button>
-                </div>
-
-                <div style="text-align: center; margin-top: 15px;">
-                    <p style="font-size: 12px; color: #666;">🔒 Sécurité garantie</p>
-                    <a href="#" style="font-size: 12px; color: #0056b3; text-decoration: none;">Accord d'accès
-                        électronique</a>
-                </div>
-            </form>
+    
+                    <div>
+                        <button type="button">
+                            Inscription
+                        </button>
+                        <button type="submit">
+                            Connexion
+                        </button>
+                    </div>
+    
+                    <div>
+                        <p>🔒 Sécurité garantie</p>
+                        <a href="#" ></a>Accord d'accès électronique</a>
+                    </div>
+                </form>
+            </div>
         </div>
+        
+
     </section>
 
 
@@ -190,13 +188,10 @@
         </p>
 
         <p style="font-size: 16px; line-height: 1.8; margin-top: 20px; text-align: center;">
-            Rejoignez-nous chez Sommet Financier et découvrez un partenaire financier engagé à vos côtés pour chaque
+            Rejoignez-nous et découvrez un partenaire financier engagé à vos côtés pour chaque
             étape de votre vie financière.
         </p>
     </section>
-
-
-
 
     <!-- Section contact -->
     <section id="contact"
@@ -227,6 +222,7 @@
         </div>
     </section>
 
+    <!-- Section avis -->
     <section id="reviews"
         style="padding: 40px; font-family: Arial, sans-serif; color: #333; background-color: #f3f3f3;">
         <h2 style="text-align: center; font-size: 32px; margin-bottom: 20px;">Avis des clients</h2>
@@ -237,7 +233,7 @@
             <!-- Review 1 -->
             <div
                 style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; width: 100%; background-color: #fff;">
-                <p style="font-size: 18px; font-weight: bold;">★★★★★</p>
+                <p style="font-size: 18px; font-weight: bold; color: #0066cc;">★★★★★</p>
                 <p style="font-size: 16px; line-height: 1.8;">
                     "Sommet Financier a vraiment changé ma vision de la banque. Grâce à leurs ateliers d’éducation
                     financière, je me sens enfin en contrôle de mes finances. Une équipe accueillante et professionnelle
@@ -249,7 +245,7 @@
             <!-- Review 2 -->
             <div
                 style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; width: 100%; background-color: #fff;">
-                <p style="font-size: 18px; font-weight: bold;">★★★★★</p>
+                <p style="font-size: 18px; font-weight: bold; color: #0066cc;">★★★★★</p>
                 <p style="font-size: 16px; line-height: 1.8;">
                     "Service incroyable et une approche unique ! Sommet Financier m'a aidé à mieux comprendre
                     l'investissement et la gestion de patrimoine. Je recommande vivement cette banque à tous ceux qui
@@ -261,7 +257,7 @@
             <!-- Review 3 -->
             <div
                 style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; width: 100%; background-color: #fff;">
-                <p style="font-size: 18px; font-weight: bold;">★★★★★</p>
+                <p style="font-size: 18px; font-weight: bold; color: #0066cc;">★★★★★</p>
                 <p style="font-size: 16px; line-height: 1.8;">
                     "Je suis impressionné par le niveau de soutien que j’ai reçu de Sommet Financier. Leur équipe est
                     toujours disponible pour répondre à mes questions et m'accompagner dans mes décisions financières."
@@ -272,6 +268,7 @@
         </div>
     </section>
 
+    <!-- Section maps -->
     <section id="locations" style="padding: 40px; font-family: Arial, sans-serif; color: #333;">
         <h2 style="text-align: center; font-size: 32px; margin-bottom: 20px;">Nos Emplacements</h2>
 
@@ -293,12 +290,6 @@
             </iframe>
         </div>
     </section>
-
-
-
-
-
-
 
     <!-- Pied de page -->
     <footer>
